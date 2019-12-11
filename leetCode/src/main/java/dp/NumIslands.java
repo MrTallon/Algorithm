@@ -59,16 +59,14 @@ class DFSDemo {
 
 class BFSDemo {
     private boolean[][] visited;
-    private int numRow;
-    private int numCol;
 
     public int numIslands(char[][] grid) {
         if (grid == null || grid.length < 1 || grid[0].length < 1) {
             return 0;
         }
         int total = 0;
-        numRow = grid.length;
-        numCol = grid[0].length;
+        int numRow = grid.length;
+        int numCol = grid[0].length;
         visited = new boolean[numRow][numCol];
 
         for (int i = 0; i < numRow; i++) {
@@ -102,11 +100,11 @@ class BFSDemo {
         return !visited[row][col] && grid[row][col] == '1';
     }
 
-    class Pair {
+    static class Pair {
         int row;
         int col;
 
-        public Pair(int row, int col) {
+        Pair(int row, int col) {
             this.row = row;
             this.col = col;
         }
