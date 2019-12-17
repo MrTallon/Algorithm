@@ -14,15 +14,11 @@ public class FindNum {
 
     public static void main(String[] args) {
         Integer[] array = new Integer[99];
-        for (Integer i = 0; i < 99; i++) {
+        for (int i = 0; i < 99; i++) {
             array[i] = i + 1;
         }
-        System.out.println(Arrays.toString(array));
-        System.out.println("---------------");
         System.out.println(method1(array));
         System.out.println(method2(array));
-
-
     }
 
     /**
@@ -47,7 +43,8 @@ public class FindNum {
         if (array.length < 2) {
             return -1;
         }
-        int i = (array.length + 1) * array.length / 2;
+//        (array.length + 1) * array.length / 2;
+        int i = (1 + 100) * 100 / 2;
         for (int n : array) {
             i -= n;
         }
