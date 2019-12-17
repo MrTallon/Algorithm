@@ -198,6 +198,28 @@ public class BinarySearchTree {
             toString(root.right);
         }
     }
+
+    public static void main(String[] args) {
+        BinarySearchTree b = new BinarySearchTree();
+        b.insert(3);b.insert(8);b.insert(1);b.insert(4);b.insert(6);
+        b.insert(2);b.insert(10);b.insert(9);b.insert(20);b.insert(25);
+
+        // 打印二叉树
+        b.toString(root);
+        System.out.println();
+
+        // 是否存在节点值10
+        TreeNode node01 = b.search(10);
+        System.out.println("是否存在节点值为10 => " + node01.value);
+        // 是否存在节点值11
+        TreeNode node02 = b.search(11);
+        System.out.println("是否存在节点值为11 => " + node02);
+
+        // 删除节点8
+        TreeNode node03 = b.delete(8);
+        System.out.println("删除节点8 => " + node03.value);
+        b.toString(root);
+    }
 }
 
 
