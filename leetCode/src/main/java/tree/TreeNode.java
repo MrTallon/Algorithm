@@ -6,16 +6,16 @@ package tree;
  * @author YangBo
  * @date 2019/04/23
  */
-public class TreeNode {
+class TreeNode {
     TreeNode left;
     TreeNode right;
     int val;
 
-    public TreeNode(int x) {
+    private TreeNode(int x) {
         this.val = x;
     }
 
-    public void insert(int value) {
+    private void insert(int value) {
         // ge to left
         if (value <= val) {
             if (left == null) {
@@ -34,7 +34,7 @@ public class TreeNode {
         }
     }
 
-    public boolean contains(int value) {
+    private boolean contains(int value) {
         if (value == val) {
             return true;
         } else if (value < val) {
@@ -52,8 +52,10 @@ public class TreeNode {
         }
     }
 
-    // 中序
-    public void pringInOrder() {
+    /**
+     * 中序
+     */
+    private void pringInOrder() {
         if (left != null) {
             left.pringInOrder();
         }

@@ -17,7 +17,7 @@ public class InsertSort {
      * @param arr 能比较的对象数组
      * @param <T> 已排序的对象数组
      */
-    public static <T extends Comparable> void insertionSort(T[] arr) {
+    private static <T extends Comparable> void insertionSort(T[] arr) {
         int j;
 
         // 从数组第二个元素开始，向前比较

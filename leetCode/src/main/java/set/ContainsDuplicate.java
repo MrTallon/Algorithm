@@ -1,11 +1,12 @@
 package set;
 
-import java.util.HashSet;
+import java.util.Arrays;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 /**
  * 判断数组中是否有重复元素
- * https://leetcode-cn.com/problems/contains-duplicate/
+ * https://lseetcode-cn.com/problems/contains-duplicate/
  *
  * @author YangBo
  * @date 2019/07/19
@@ -19,11 +20,7 @@ public class ContainsDuplicate {
     }
 
     private static boolean containsDuplicate(int[] nums) {
-
-        Set set = new HashSet<>();
-
-
-        return false;
+        Set<Integer> set = Arrays.stream(nums).boxed().collect(Collectors.toSet());
+        return set.size() != nums.length;
     }
-
 }

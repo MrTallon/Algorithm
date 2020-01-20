@@ -10,14 +10,11 @@ public class SimpleMethod {
 
     /**
      * 判断是否为回文
-     *
-     * @return
      */
-    private static boolean huiwen() {
-        String txt = "10";
-        int N = txt.length();
-        for (int i = 0; i < N / 2; i++) {
-            if (txt.charAt(i) != txt.charAt(N - 1 - i)) {
+    private static boolean huiwen(String txt) {
+        int n = txt.length();
+        for (int i = 0; i < n / 2; i++) {
+            if (txt.charAt(i) != txt.charAt(n - 1 - i)) {
                 return false;
             }
         }
@@ -39,9 +36,6 @@ public class SimpleMethod {
 
     /**
      * 检查一个字符串数组中的元素是否已按照字母表顺排序
-     *
-     * @param a
-     * @return
      */
     private static boolean isSorted(String[] a) {
         for (int i = 1; i < a.length; i++) {

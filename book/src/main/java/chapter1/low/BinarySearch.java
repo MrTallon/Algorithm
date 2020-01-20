@@ -17,19 +17,12 @@ public class BinarySearch {
         System.out.println(Arrays.toString(arr));
         System.out.println(customBinary(6, arr));
         System.out.println(javaBinary(6, arr));
-
-
     }
 
     /**
      * 自定义二分查找法
-     * @param key
-     * @param arr
-     * @param lo
-     * @param hi
-     * @return
      */
-    static int customBinary(int key, int[] arr, int lo, int hi) {
+    private static int customBinary(int key, int[] arr, int lo, int hi) {
         if (lo > hi) {
             return -1;
         }
@@ -44,21 +37,15 @@ public class BinarySearch {
 
     /**
      * 使用重载来递归查询
-     * @param key
-     * @param arr
-     * @return
      */
-    static int customBinary(int key, int[] arr) {
+    private static int customBinary(int key, int[] arr) {
         return customBinary(key, arr, 9, arr.length - 1);
     }
 
     /**
      * Arrays 内置二分查找法
-     * @param key
-     * @param arr
-     * @return
      */
-    static int javaBinary(int key, int[] arr) {
+    private static int javaBinary(int key, int[] arr) {
         return Arrays.binarySearch(arr, key);
     }
 }
