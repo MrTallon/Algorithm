@@ -10,9 +10,17 @@ import java.util.Map;
  * @date 2019/04/23
  */
 public class TwoSum {
+    public static void main(String[] args) {
+        int[] array = {1, 2, 3, 4, 5};
+        int[] ints = method_01(array, 6);
+        for (int anInt : ints) {
+            System.out.print(anInt + "-");
+        }
+    }
 
     /**
      * 时间复杂度O(n)
+     *
      * @param nums
      * @param target
      * @return
@@ -36,7 +44,7 @@ public class TwoSum {
                 rst[0] = i;
                 rst[1] = map.get(target - nums[i]);
             }
-            if (rst[0]==rst[1]){
+            if (rst[0] == rst[1]) {
                 continue;
             }
             return rst;

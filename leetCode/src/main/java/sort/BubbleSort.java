@@ -10,13 +10,14 @@ public class BubbleSort {
 
     /**
      * 第一版：基础版
+     *
      * @param array
      */
     private static void version_01(int[] array) {
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array.length - 1 - i; j++) {
                 if (array[j] > array[j + 1]) {
-                    swap(array ,j, j+1);
+                    swap(array, j, j + 1);
                 }
             }
         }
@@ -24,6 +25,7 @@ public class BubbleSort {
 
     /**
      * 第二版：增加排序标识符，当数组有序后直接跳出循环
+     *
      * @param array
      */
     private static void version_02(int[] array) {
@@ -32,7 +34,7 @@ public class BubbleSort {
             boolean isSorted = true;
             for (int j = 0; j < array.length - 1 - i; j++) {
                 if (array[j] > array[j + 1]) {
-                    swap(array ,j, j+1);
+                    swap(array, j, j + 1);
                     // 有元素交换，所以数组不是有序的
                     isSorted = false;
                 }
@@ -45,6 +47,7 @@ public class BubbleSort {
 
     /**
      * 第三版：寻找出数组中已存在的有序区，减少每次多余的比较
+     *
      * @param array
      */
     private static void version_03(int[] array) {
@@ -72,16 +75,16 @@ public class BubbleSort {
 
     /**
      * 双向冒泡排序
+     *
      * @param array
      */
     private static void version_04(int array) {
 
     }
 
-    private static void swap(int array[],int left, int right) {
+    private static void swap(int array[], int left, int right) {
         int temp = array[left];
         array[left] = array[right];
         array[right] = temp;
     }
-
 }
