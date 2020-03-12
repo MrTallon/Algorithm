@@ -16,9 +16,9 @@ public class Stock_0121 {
 
         int maxProfits = 0;
         int currentPrice = Integer.MAX_VALUE;
-        for (int i = 0; i < prices.length; i++) {
-            currentPrice = Math.min(currentPrice, prices[i]);
-            maxProfits = Math.max(prices[i]-currentPrice,maxProfits);
+        for (int price : prices) {
+            currentPrice = Math.min(currentPrice, price);
+            maxProfits = Math.max(price - currentPrice, maxProfits);
         }
         if (maxProfits < currentPrice) {
             return 0;

@@ -20,6 +20,9 @@ public class DiameterOfBinaryTree_0182 {
     }
 
     private int setDeep(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
         int left = setDeep(root.left);
         int right = setDeep(root.right);
         if (left + right > diameter) {
