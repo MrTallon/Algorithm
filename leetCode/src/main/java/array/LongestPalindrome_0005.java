@@ -10,10 +10,10 @@ package array;
  * @author YangBo
  * @date 2019/05/22
  */
-public class LongestPalindrome {
+public class LongestPalindrome_0005 {
 
     public static void main(String[] args) {
-        String s = "address";
+        String s = "cbbd";
 
         System.out.println(method(s));
         System.out.println(manacher(s));

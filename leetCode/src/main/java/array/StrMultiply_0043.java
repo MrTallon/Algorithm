@@ -10,7 +10,7 @@ package array;
  * @author YangBo
  * @date 2019/05/08
  */
-public class StrMultiply {
+public class StrMultiply_0043 {
     public static void main(String[] args) {
 
         System.out.println(multiply("2", "3"));
