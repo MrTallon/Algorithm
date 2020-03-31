@@ -8,7 +8,7 @@ package sort;
  */
 public class QuickSort {
     public static void main(String[] args) {
-        int[] array = {1, 213, 123, 1, 23,12,3,123,21,3,123,12,4,3245,3,543,6,7};
+        int[] array = {5,1,1,2,0,0};
         sort(array);
         for (int a : array) {
             System.out.println(a);
