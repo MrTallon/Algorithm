@@ -9,7 +9,7 @@ import java.util.Map;
  * @author YangBox
  * @date 2019/04/23
  */
-public class TwoSum {
+public class TwoSum_0001 {
     public static void main(String[] args) {
         int[] array = {1, 2, 3, 4, 5};
         int[] ints = method_01(array, 6);
@@ -26,14 +26,13 @@ public class TwoSum {
      * @return
      */
     public static int[] method_01(int[] nums, int target) {
-
-        int[] rst = new int[2];
-
         if (nums == null || nums.length == 0) {
             return null;
         }
 
-        Map<Integer, Integer> map = new HashMap();
+        int[] rst = new int[2];
+
+        Map<Integer, Integer> map = new HashMap<>(nums.length);
 
         for (int i = 0; i < nums.length; i++) {
             map.put(nums[i], i);
@@ -55,13 +54,9 @@ public class TwoSum {
     /**
      * 优化版
      * 时间复杂度：O(n)
-     *
-     * @param nums
-     * @param target
-     * @return
      */
     public static int[] method_02(int[] nums, int target) {
-        Map<Integer, Integer> map = new HashMap<>(10);
+        Map<Integer, Integer> map = new HashMap<>(nums.length);
         for (int i = 0; i < nums.length; i++) {
             Integer index = map.get(target - nums[i]);
             if (index == null) {

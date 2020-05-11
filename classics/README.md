@@ -6,7 +6,7 @@
 
 ### 动态规划（DP）
 
-### KMP
+### [KMP](https://github.com/MrTallon/algorithm/blob/master/classics/src/main/java/KMP.java)
 
 ### 贪心算法
 

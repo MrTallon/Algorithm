@@ -4,6 +4,10 @@
  * @date 2020-04-29 00:57
  */
 public class KMP {
+    /**
+     * 时间复杂度 O(m+n)
+     * @param args
+     */
     public static void main(String[] args) {
         System.out.println(kmpMatch("123456","451"));
     }
