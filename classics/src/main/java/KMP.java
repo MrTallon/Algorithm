@@ -6,10 +6,11 @@
 public class KMP {
     /**
      * 时间复杂度 O(m+n)
+     *
      * @param args
      */
     public static void main(String[] args) {
-        System.out.println(kmpMatch("123456","451"));
+        System.out.println(kmpMatch("12345454514q56", "4q"));
     }
 
     /**
@@ -40,6 +41,7 @@ public class KMP {
 
     /**
      * 对主串s和模式串t进行KMP模式匹配
+     *
      * @param s 主串
      * @param t 模式串
      * @return 若匹配成功，返回t在s中的位置（第一个相同字符对应的位置），若匹配失败，返回-1
