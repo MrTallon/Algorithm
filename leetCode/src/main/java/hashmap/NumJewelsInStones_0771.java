@@ -6,7 +6,7 @@ package hashmap;
  * @author YangBo
  * @date 2019/08/26
  */
-public class NumJewelsInStones {
+public class NumJewelsInStones_0771 {
     public static void main(String[] args) {
         String J = "ab";
         String S = "abcdeAa";
