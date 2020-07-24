@@ -38,6 +38,7 @@ public class SameNum {
 
         System.out.println("======");
         // 原来Integer还可以实现进制转换啊
+        System.out.println("原来Integer还可以实现进制转换啊");
         System.out.println(Integer.toString(10,9));
     }
 }
