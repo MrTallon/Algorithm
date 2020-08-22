@@ -19,7 +19,7 @@ public class CloneGraph_0133 {
 
     public Node cloneGraph_DFS(Node node) {
         if (node == null) {
-            return node;
+            return null;
         }
 
         // 如果该节点已经被访问过了，则直接从哈希表中取出对应的克隆节点返回
