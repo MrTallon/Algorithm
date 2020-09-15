@@ -1,6 +1,7 @@
 package tree;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 /**
@@ -33,5 +34,10 @@ public class BinaryTreePaths_0257 {
                 constructPaths(root.right, pathSB.toString(), paths);
             }
         }
+    }
+
+    public static void main(String[] args) {
+        Calendar cal1 = Calendar.getInstance();
+        System.out.println(cal1);
     }
 }
