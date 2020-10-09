@@ -19,12 +19,3 @@ public class MiddleNode_0876 {
         return p;
     }
 }
-
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode(int x) {
-        val = x;
-    }
-}
