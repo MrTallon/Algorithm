@@ -73,16 +73,7 @@ public class BubbleSort {
         }
     }
 
-    /**
-     * 双向冒泡排序
-     *
-     * @param array
-     */
-    private static void version_04(int array) {
-
-    }
-
-    private static void swap(int array[], int left, int right) {
+    private static void swap(int[] array, int left, int right) {
         int temp = array[left];
         array[left] = array[right];
         array[right] = temp;

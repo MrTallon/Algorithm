@@ -11,6 +11,7 @@ package tree;
 public class GetMinimumDifferencegetMinimumDifference_0530 {
     int pre;
     int ans;
+
     public int getMinimumDifference(TreeNode root) {
         ans = Integer.MAX_VALUE;
         pre = -1;
@@ -23,12 +24,10 @@ public class GetMinimumDifferencegetMinimumDifference_0530 {
             return;
         }
         dfs(root.left);
-        if (pre == -1) {
-            pre = root.val;
-        } else {
+        if (pre != -1) {
             ans = Math.min(ans, root.val - pre);
-            pre = root.val;
         }
+        pre = root.val;
         dfs(root.right);
     }
 }

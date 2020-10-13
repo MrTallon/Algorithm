@@ -2,6 +2,7 @@ package sort;
 
 /**
  * Implemented quickSort
+ * 快排
  *
  * @author YangBo
  * @date 2019/05/21

@@ -11,17 +11,18 @@ import java.util.List;
  * @author YangBo
  * @date 2019/05/23
  */
-public class FourSum {
+public class FourSum_0018 {
 
     private static List<List<Integer>> method(int[] nums, int target) {
         List<List<Integer>> result = new LinkedList<>();
         Arrays.sort(nums);
 
-        if (nums.length < 4) {
+        int n = nums.length;
+
+        if (n < 4) {
             return result;
         }
 
-        int n = nums.length;
         for (int i = 0; i < n - 3; i++) {
             if (i > 0 && nums[i] == nums[i - 1]) {
                 // 相同数字的跳过，节省时间
