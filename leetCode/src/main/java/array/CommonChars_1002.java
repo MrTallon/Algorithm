@@ -1,6 +1,5 @@
 package array;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -20,6 +19,6 @@ public class CommonChars_1002 {
             int[] freq = new int[26];
 
         }
-
+        return null;
     }
 }
